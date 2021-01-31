@@ -1,1 +1,1 @@
-# power-bi-streaming
+# Event Streaming in Power BI
