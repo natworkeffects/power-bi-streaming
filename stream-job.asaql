@@ -1,0 +1,25 @@
+
+SELECT
+	event_id
+	,TRY_CAST(event_timestamp AS datetime) AS event_timestamp
+	,event_type
+	,referer_medium
+	,utm_medium
+	,utm_source
+	,utm_content
+	,utm_campaign
+	,TRY_CAST(geo_latitude AS float) AS geo_latitude
+	,TRY_CAST(geo_longitude AS float) AS geo_longitude
+	,geo_country
+	,geo_region_name
+	,browser_name
+	,os
+	,os_name
+	,device_type
+	,device_is_mobile
+	,user_custom_id
+	,1 AS event_count
+INTO
+	[event-hub-dataset]
+FROM
+	[event-hub-stream]
