@@ -20,6 +20,6 @@ SELECT
 	,user_custom_id
 	,1 AS event_count
 INTO
-	[event-hub-dataset]
+	Outputs
 FROM
-	[event-hub-stream]
+	Inputs
