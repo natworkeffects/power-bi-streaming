@@ -9,7 +9,7 @@ async def run():
     # Create a producer client to send messages to the event hub.
     # Specify a connection string to your event hubs namespace and
     # the event hub name.
-    producer = EventHubProducerClient.from_connection_string(conn_str='Endpoint=sb://power-bi-streaming.servicebus.windows.net/;SharedAccessKeyName=power-bi-streaming;SharedAccessKey=ImuM4tgvMW5OVpg7H8c6zlRwMd9nF8GJGHwwTaKeTbE=', eventhub_name='power-bi-streaming')
+    producer = EventHubProducerClient.from_connection_string(conn_str='<connection-string>', eventhub_name='<event-hub>')
     async with producer:
         # Create a batch.
         event_data_batch = await producer.create_batch() 
