@@ -20,6 +20,6 @@ SELECT
 	,user_custom_id
 	,1 AS event_count
 INTO
-	Outputs
+	Output
 FROM
-	Inputs
+	Input
